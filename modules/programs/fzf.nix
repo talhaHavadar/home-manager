@@ -203,7 +203,7 @@ in {
     # initialization show up a bit earlier. This is to make initialization of
     # other history managers, like mcfly or atuin, take precedence.
     programs.bash.initExtra =
-      mkIf cfg.enableBashIntegration (mkOrder 200 bashIntegration);
+      mkIf cfg.enableBashIntegration (mkAfter bashIntegration);
 
     # Note, since fzf unconditionally binds C-r we use `mkOrder` to make the
     # initialization show up a bit earlier. This is to make initialization of
