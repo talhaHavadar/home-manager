@@ -1789,6 +1789,44 @@ in {
           cmus is a small, fast and powerful console music player.
         '';
       }
+
+      {
+        time = "2024-10-20T07:53:54+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'programs.nh'.
+
+          nh is yet another Nix CLI helper. Adding functionality on top of the
+          existing solutions, like nixos-rebuild, home-manager cli or nix
+          itself.
+        '';
+      }
+
+      {
+        time = "2024-10-25T08:18:30+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'nixGL'.
+
+          NixGL solve the "OpenGL" problem with nix. The 'nixGL' module provides
+          integration of NixGL into Home Manager. See the "GPU on non-NixOS
+          systems" section in the Home Manager manual for more.
+        '';
+      }
+
+      {
+        time = "2024-11-01T19:44:59+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.podman'.
+
+          Podman is a daemonless container engine that lets you manage
+          containers, pods, and images.
+
+          This Home Manager module allows you to define containers that will run
+          as systemd services.
+        '';
+      }
     ];
   };
 }
